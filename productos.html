@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> TATETI</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estiloss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/css/css_image_gallery.asp">
+</head>
+
+
+<body class="grid_container">
+	<header class="header">
+		<a href="index.html"><img src="imagenes/logo.png" alt="Logo" class="logoh"></a>
+	</header>
+	<nav class="navbar">
+        <a href="index.html" class="pagina">INICIO</a>
+		<a href="productos.html" class="pagina">PRODUCTOS</a>
+		<a href="contacto.html" class="pagina">CONTACTO</a>
+	</nav>
+    <section class="main"> 
+        <div class="elementoCarousel fade">
+            <img src="imagenes/sping.jpg" style="width:100%">
+        </div>
+    
+        <div class="elementoCarousel fade">
+            <img src="imagenes/carrusel.jpg" style="width:100%">
+        </div>
+    
+        <div class="elementoCarousel fade">
+            <img src="imagenes/carruselll.jpg" style="width:100%">
+        </div>
+    
+        <div class="elementoCarousel fade">
+            <img src="imagenes/adorable-little-girl-in-her-bed-early-in-the-morning.jpg" style="width:100%">
+        </div>
+      
+        <div class="elementoCarousel fade">
+            <img src="imagenes/a1daf99a8ad3f63f772467188a35f824.jpg" style="width:100%">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="slideActual(1)"></span>
+        <span class="dot" onclick="slideActual(2)"></span>
+        <span class="dot" onclick="slideActual(3)"></span>
+        <span class="dot" onclick="slideActual(4)"></span>
+        <span class="dot" onclick="slideActual(5)"></span>
+    </div>
+    
+    <br>
+    
+    <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    </div>
+    
+    
+    <script>
+        // Definir un índice y llamar a la función que muestra un slide
+        let indiceSlide = 1;
+        mostrarSlides(indiceSlide);
+    
+        // Mover el slide a través de los controles previo y próximo (1, -1)
+        function plusSlides(numero) {
+            mostrarSlides(indiceSlide += numero);
+        }
+    
+        // Mover el slide a través de los indicadores
+        function slideActual(numero) {
+            mostrarSlides(indiceSlide = numero);
+        }
+    
+        function mostrarSlides(numero) {
+            // Obtener los elementos para operar con ellos
+            let slides = document.getElementsByClassName("elementoCarousel");
+            let indicadores = document.getElementsByClassName("dot");
+    
+            // Validar "numero"
+            if (numero > slides.length) { indiceSlide = 1 }
+            if (numero < 1) { indiceSlide = slides.length }
+    
+            // Iterar y ocultar los slides y el estilo de los indicadores
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < indicadores.length; i++) {
+                indicadores[i].className = indicadores[i].className.replace(" active", "");
+            }
+    
+            // Mostrar el slide indicado con display block y agregarle el estilo al punto indicado
+            slides[indiceSlide - 1].style.display = "block";
+            indicadores[indiceSlide - 1].className += " active";
+        } 
+    </script>
+    <div class="alerta">UNA VEZ HECHA LA COMPRA, ENVIE EL COMPROBANTE MEDIANTE WHATSAPP</div>
+      
+        <div class="w3-card-4" style="width:20%">
+          <img src="imagenes/840_560 copia.png" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Italian / Austrian Alps</p>
+          </div>
+        </div>
+      
+        <div class="w3-card-4" style="width:20%">
+          <img src="imagenes/840_560.png" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Italian / Austrian Alps</p>
+          </div>
+        </div>
+      
+        <div class="w3-card-4" style="width:20%">
+          <img src="imagenes/pijama gris.png" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Italian / Austrian Alps</p>
+          </div>
+        </div>
+      
+        <div class="w3-card-4" style="width:20%">
+          <img src="imagenes/pijama rosa.png" alt="Alps" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>The Italian / Austrian Alps</p>
+          </div>
+        </div>
+    <footer class="footer">
+            <div class="links">
+                <img src="imagenes/w.png" alt="WhatsApp" class="redes1">
+                <img src="imagenes/facebook.png" alt="facebook" class="redes2">
+                <img src="imagenes/inst.png" alt="Instagram" class="redes3">	
+            </div> 
+				  </div>
+				  <span class="footer-copyright">©️ 2022 Recomendaciones TATETI. Todos los derechos reservados <a href="index.html">Inicio</a> <a href="contacto.html">Contacto</a> <a href="productos.html">Productos</a>
+				  </span>
+			</div>
+        </footer>
+</body>
+</html>

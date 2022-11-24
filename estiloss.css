@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}	
+html{
+	height: 100%;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+	background-image: url(imagenes/rayas.jpg);
+	background-size: cover;
+    display: inline-block;
+}
+.header{
+	grid-area: header;
+}
+.logoh{
+	margin-top: 0cm;
+	width: 128.9px;
+	height: 145px;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 1cm;
+    margin-top: 0cm;
+    border: 30px;
+}
+.navbar{
+	grid-area: navbar;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: right;
+	justify-content: space-evenly;
+	width: 100%;
+	text-align: right;
+}
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"navbar" 50px
+	"main"	auto
+	"footer" 100%;
+}
+.equipotitulo{
+    text-align: center;
+    padding-top: 2%;
+}
+.equipotitulo2{
+    text-align: center;
+    padding-top: 2%;
+}
+.historia {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	margin-top: 19%;
+	margin-right: 5%;
+}
+.babyboo {
+	display: inline-block;
+	text-align: center;
+	margin-left: 5%;
+}
+.atencion{
+ font-size: 22px;
+}
+.ubicacion{
+	display: block;
+	}
+.mapa{
+	display: inline-block;
+}
+.pagina{
+	font-family: 'Urbanist';
+	text-decoration: none;
+	color: #ffffff;
+	border: 1cm;
+	background-color: #ca449c;
+	padding: 0.45cm;
+	border-radius: 1cm;
+}
+.footer-copyright {
+	text-align: right;
+}
+.pagina:hover{
+	color: #ffffff;
+	background-color: #5a738a;
+}
+.main{
+	grid-area: main;
+	font-family: 'Urbanist';
+	font-size: 1.15em;
+    padding-top: 2%;
+}
+.footer{
+	grid-area: footer;
+    border-top: #5a738a solid 0,05cm;
+    background-color: rgb(255, 0, 174);
+    width: 100%;
+	height: 100px;
+	padding-top: 2%;
+}
+.btn{
+background-color: #e030c5;
+width: 100px;
+height: 60px;
+margin-bottom: 7% ;
+}
+.links{
+	float: left;
+	height: auto;
+	grid-area: links;
+	margin-right: 0.25cm;
+}
+.alerta {
+color: rgb(255, 0, 174);
+text-align: center;
+}
+.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	width: 20%;
+	display: inline-block;
+	justify-content: space-evenly;
+	margin-right: 5%;
+	margin-bottom: 5%;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+
+.babyboo {
+	margin-bottom: 5% ;
+}
+.w3-card-4{
+	display: inline-block;
+	margin-top: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 22%;
+	margin-bottom: 15px;
+	padding-top: 15px;
+}
+.redes1{
+	width: 105px;
+	height: 51.5px;
+}
+.redes2{
+	width: 51.75px;
+	height: 51.5px;
+}
+.redes3{
+	width: 40px;
+	height: 50px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.lfooter{
+	width: 78.9px;
+	height: 91px;
+}
+.container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .elementoCarousel {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  .prev {
+	left: 0%;
+	border-radius: 3px 0 0 3px ;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(244, 60, 146, 0.8);
+	padding: 5px;
+  }
+  
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  #myBtn {
+	display: none; /* Esconder por default */
+	position: fixed; /* Position */
+	bottom: 3%;
+	right: 4%; 
+	z-index: 99; /* Que nada se superponga */
+	border: none; 
+	outline: none; 
+	background-color: rgb(146, 2, 208);
+	color: #f2f2f2; 
+	cursor: pointer; 
+	padding: 1rem;
+	border-radius: 10px;
+	font-size: 1.1rem;
+  }
+  
+  #myBtn:hover {
+	background-color: rgb(93, 243, 178); /* Add a dark-grey background on hover */
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}	
+html{
+	height: 100%;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+	background-image: url(imagenes/rayas.jpg);
+	background-size: cover;
+    display: inline-block;
+}
+.navbar{
+	grid-area: navbar;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: right;
+	justify-content: space-evenly;
+	width: 100%;
+	text-align: right;
+	padding-right: 20%;
+}
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"navbar" 50px
+	"main"	auto
+	"footer" 100%;
+}
+.equipotitulo{
+    text-align: center;
+    padding-top: 2%;
+}
+.equipotitulo2{
+    text-align: center;
+	width: 80%;
+	margin-left: 10%;
+}
+.historia {
+	display: block;
+	float: none;
+	width: 80%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 10%;
+}
+.babyboo {
+	display: inline-block;
+	text-align: center;
+	margin-left: 5%;
+}
+.atencion{
+	font-size: 22px;
+   }
+   .ubicacion{
+	   display: block;
+	   }
+   .mapa{
+	   display: inline-block;
+   }
+.pagina{
+	font-family: 'Urbanist';
+	text-decoration: none;
+	color: #ffffff;
+	border: 1cm;
+	background-color: #ca449c;
+	padding: 0.45cm;
+	border-radius: 1cm;
+}
+.footer-copyright {
+	text-align: right;
+}
+.pagina:hover{
+	color: #ffffff;
+	background-color: #5a738a;
+}
+.main{
+	grid-area: main;
+	font-family: 'Urbanist';
+	font-size: 1.15em;
+    padding-top: 2%;
+	width: 100%;
+}
+.footer{
+	grid-area: footer;
+    border-top: #5a738a solid 0,05cm;
+    background-color: rgb(255, 0, 174);
+    width: 100%;
+	height: 100px;
+	padding-top: 2%;
+}
+
+.alerta {
+color: rgb(255, 0, 174);
+text-align: center;
+}
+.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	width: 80%;
+	display: inline-block;
+	justify-content: space-evenly;
+	margin-left: 6%;
+	margin-bottom: 5%;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+
+.babyboo {
+	margin-bottom: 5% ;
+}
+.w3-card-4{
+	display: block;
+	margin-top: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+	margin-bottom: 15px;
+	padding-top: 15px;
+    margin-left: 40%;
+}
+.container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .elementoCarousel {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  .prev {
+	left: 0%;
+	border-radius: 3px 0 0 3px ;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(244, 60, 146, 0.8);
+	padding: 5px;
+  }
+  
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+}
+	@media (min-width: 400px) and (max-width: 768px) {
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}	
+	html{
+		height: 100%;
+	}
+	body{
+		text-align: center;
+		min-height: 100%;
+		background-image: url(imagenes/rayas.jpg);
+		background-size: cover;
+		display: inline-block;
+	}
+	.navbar{
+		grid-area: navbar;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: right;
+		justify-content: space-evenly;
+		width: 100%;
+		text-align: right;
+		padding-right: 20%;
+	}
+	.grid_container{
+		display: grid;
+		grid-template: 
+		"header" 100px
+		"navbar" 50px
+		"main"	auto
+		"footer" 100%;
+	}
+	.equipotitulo{
+		text-align: center;
+		padding-top: 2%;
+	}
+	.equipotitulo2{
+		text-align: center;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.historia {
+		display: block;
+		float: none;
+		width: 80%;
+		margin-top: 5%;
+		margin-right: 5%;
+		margin-left: 10%;
+	}
+	.babyboo {
+		display: inline-block;
+		text-align: center;
+		margin-left: 5%;
+	}
+	.atencion{
+		font-size: 22px;
+	   }
+	   .ubicacion{
+		   display: block;
+		   }
+	   .mapa{
+		   display: inline-block;
+	   }
+	.pagina{
+		font-family: 'Urbanist';
+		text-decoration: none;
+		color: #ffffff;
+		border: 1cm;
+		background-color: #ca449c;
+		padding: 0.45cm;
+		border-radius: 1cm;
+	}
+	.footer-copyright {
+		text-align: right;
+	}
+	.pagina:hover{
+		color: #ffffff;
+		background-color: #5a738a;
+	}
+	.main{
+		grid-area: main;
+		font-family: 'Urbanist';
+		font-size: 1.15em;
+		padding-top: 2%;
+		width: 100%;
+	}
+	.footer{
+		grid-area: footer;
+		border-top: #5a738a solid 0,05cm;
+		background-color: rgb(255, 0, 174);
+		width: 100%;
+		height: 100px;
+		padding-top: 2%;
+	}
+	
+	.alerta {
+	color: rgb(255, 0, 174);
+	text-align: center;
+	}
+	.gallery {
+		margin: 5px;
+		border: 1px solid #ccc;
+		width: 80%;
+		display: inline-block;
+		justify-content: space-evenly;
+		margin-left: 6%;
+		margin-bottom: 5%;
+	  }
+	  
+	  div.gallery:hover {
+		border: 1px solid #777;
+	  }
+	
+	.babyboo {
+		margin-bottom: 5% ;
+	}
+	.w3-card-4{
+		display: block;
+		margin-top: 5%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 100%;
+		margin-bottom: 15px;
+		padding-top: 15px;
+		margin-left: 40%;
+	}
+	.container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	  }
+	  
+	  /* Hide the images by default */
+	  .elementoCarousel {
+		display: none;
+	  }
+	  
+	  /* Next & previous buttons */
+	  .prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	  }
+	  
+	  /* Position the "next button" to the right */
+	  .next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	  }
+	  .prev {
+		left: 0%;
+		border-radius: 3px 0 0 3px ;
+	  }
+	  /* On hover, add a black background color with a little bit see-through */
+	  .prev:hover, .next:hover {
+		background-color: rgba(244, 60, 146, 0.8);
+		padding: 5px;
+	  }
+	  
+	  /* Caption text */
+	  .text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		text-align: center;
+	  }
+	  
+	  /* Number text (1/3 etc) */
+	  .numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	  }
+	  
+	  /* The dots/bullets/indicators */
+	  .dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	  }
+	  
+	  .active, .dot:hover {
+		background-color: #717171;
+	  }
+	  
+	  /* Fading animation */
+	  .fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	  }
+	  
+	  @keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	  }
+	  
+	}
+	
